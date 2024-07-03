@@ -1,11 +1,13 @@
 ```mermaid
 sequenceDiagram
+    participant user
     participant browser
-    participant server
+    participant server 
 
+    user->>browser: Enter a new note and click save
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-    server-->>browser: Response (new_note added)
+    server-->>browser: redirect to https://studies.cs.helsinki.fi/exampleapp/notes
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
