@@ -1,8 +1,8 @@
 ```mermaid
 sequenceDiagram
+    participant user
     participant browser
     participant server
-    participant user
 
     Note over browser: adding a new note spa does not reloads the page
     
