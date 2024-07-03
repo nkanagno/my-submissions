@@ -4,7 +4,7 @@ sequenceDiagram
     participant browser
     participant server
 
-    user->>Browser: Navigate to https://studies.cs.helsinki.fi/exampleapp/spa
+    user->>browser: Navigate to https://studies.cs.helsinki.fi/exampleapp/spa
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
     activate server
     server-->>browser: HTML document
