@@ -4,7 +4,7 @@ sequenceDiagram
     participant server
     participant user
 
-    Note over of browser: adding a new note spa does not reloads the page
+    Note over browser: adding a new note spa does not reloads the page
     
     user->>browser: Enter a new note and click save
     browser->>browser: Create new note object
