@@ -1,10 +1,10 @@
 ```mermaid
 sequenceDiagram
+    participant user
     participant browser
     participant server
-    participant user
 
-    User->>Browser: Navigate to https://studies.cs.helsinki.fi/exampleapp/spa
+    user->>Browser: Navigate to https://studies.cs.helsinki.fi/exampleapp/spa
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
     activate server
     server-->>browser: HTML document
